@@ -1,23 +1,17 @@
 import logo from './logo.svg';
+import Counter from './Counter';
 import './App.css';
-
+import Todolist from './Todolist';
+import Navbar from './Navbar';
+import { Outlet } from 'react-router-dom';
+import Countries from './Countries';
+import Airlines from './Airlines';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+        <Navbar></Navbar>
+        <Outlet></Outlet>
     </div>
   );
 }
